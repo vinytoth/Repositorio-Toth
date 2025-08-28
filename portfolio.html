@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Descrição e palavras-chave melhoram SEO básico -->
+<meta name="description" content="Portfólio pessoal de Vinicius — projetos, formação, contato.">
+<meta name="keywords" content="portfólio, currículo, web, projetos, contato">
+<title>Portfólio • Vinicius</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<!-- ÚNICO arquivo CSS (sem frameworks) -->
+<link rel="stylesheet" href="css/styles.css">
+<!-- Script JS opcional para menu mobile e pequenas melhorias de UX -->
+<script defer src="js/main.js"></script>
+
+  </head>
+  <body>
+
+<!-- Navegação principal (visível em todas as páginas) -->
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Ir para a página inicial">Vinicius</a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+  <nav id="site-menu" class="site-nav" aria-label="Menu principal">
+    <ul>
+      <li><a href="about.html">Sobre mim</a></li>
+      <li><a href="education.html">Formação & Idiomas</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contact.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <main class="container">
+      <!-- Grid de projetos -->
+      <section class="prose">
+        <h1>Portfólio</h1>
+        <p>Seleção de projetos e estudos de caso. Você pode incluir links para repositórios, páginas publicadas ou
+           trabalhos feitos durante o curso.</p>
+      </section>
+
+      <section class="grid-projects">
+        <!-- Exemplo de card de projeto. Duplique/edite conforme necessário. -->
+        <article class="project-card">
+          <h3>Dashboard de Prevenção a Fraudes</h3>
+          <p>Power BI com taxas de aprovação, regras de recusa e perdas evitadas.</p>
+          <a class="btn btn-small" href="#" target="_blank" rel="noopener">Ver projeto</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Pipeline de Dados em Python</h3>
+          <p>Coleta, limpeza e análise com PySpark/SQL para detecção de outliers.</p>
+          <a class="btn btn-small" href="#" target="_blank" rel="noopener">Ver repositório</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Site Estático com HTML & CSS</h3>
+          <p>Este próprio portfólio como exemplo de site responsivo sem frameworks.</p>
+          <a class="btn btn-small" href="index.html">Abrir</a>
+        </article>
+      </section>
+    </main>
+
+<!-- Rodapé simples -->
+<footer class="site-footer">
+  <p>© <span id="year"></span> Vinicius — Portfólio pessoal.</p>
+</footer>
+
+  </body>
+</html>
