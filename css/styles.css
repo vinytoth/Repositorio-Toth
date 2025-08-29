@@ -11,7 +11,7 @@
   --card: #111318;
   --text: #e8eef2;
   --muted: #a7b0b8;
-  --brand: #61dafb; /* Destaque suave, pode alterar */
+  --brand: #61dafb; 
   --accent: #7fffd4;
   --ring: rgba(97, 218, 251, 0.45);
 }
