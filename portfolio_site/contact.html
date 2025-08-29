@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Descrição e palavras-chave melhoram SEO básico -->
+<meta name="description" content="Portfólio pessoal de Vinicius — projetos, formação, contato.">
+<meta name="keywords" content="portfólio, currículo, web, projetos, contato">
+<title>Contato • Vinicius</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<!-- ÚNICO arquivo CSS (sem frameworks) -->
+<link rel="stylesheet" href="css/styles.css">
+<!-- Script JS opcional para menu mobile e pequenas melhorias de UX -->
+<script defer src="js/main.js"></script>
+
+  </head>
+  <body>
+
+<!-- Navegação principal (visível em todas as páginas) -->
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Ir para a página inicial">Vinicius</a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+  <nav id="site-menu" class="site-nav" aria-label="Menu principal">
+    <ul>
+      <li><a href="about.html">Sobre mim</a></li>
+      <li><a href="education.html">Formação & Idiomas</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contact.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <main class="container">
+      <!-- Formulário VISUAL (sem backend) atendendo aos requisitos: nome, email, mensagem -->
+      <section class="prose">
+        <h1>Contato</h1>
+        <p>Preencha o formulário abaixo. (Demonstração visual — sem envio real.)</p>
+      </section>
+
+      <form class="contact-form" aria-label="Formulário de contato" novalidate>
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="voce@email.com" required>
+        </div>
+        <div class="field">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="6" placeholder="Como posso ajudar?" required></textarea>
+        </div>
+        <div class="actions">
+          <button class="btn" type="submit">Enviar (demo)</button>
+          <p class="form-hint" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </main>
+
+<!-- Rodapé simples -->
+<footer class="site-footer">
+  <p>© <span id="year"></span> Vinicius — Portfólio pessoal.</p>
+</footer>
+
+  </body>
+</html>
